@@ -1,5 +1,6 @@
 # ML-for-Predictive-Maintenance
 Progetto di tesi presso l'Università degli Studi dell'Insubria che si occupa della realizzazione di un modello di machine learning  con l'obiettivo di ottenere un  sistema di manutenzione predittiva in un ambiente industriale da poter integrare all’interno del progetto di tesi magistrale di Andrea Chiericati in collaborazione con il Dottor Gianfranco Modoni, operativo presso il Consiglio Nazionale delle Ricerche (CNR) di Bari. La soluzione proposta si basa sulla realizzazione e il confronto di molteplici modelli di machine learning basati su due algoritmi: il Support Vector Machine e il Random Forest.
+Tutto il progetto è stato sviluppato su Ubuntu 20.04.
 
 ## Set-up dell'ambiente di sviluppo
 Prima di installare PySpark bisogna verificare di soddisfare il seguente prerequisito. Spark è scritto in Scala Programming Language e funziona in ambiente Java Virtual Machine (JVM). Ecco perché bisogna verificare di aver installato un Java Development Kit (JDK). E' importante avere una versione 8 o superiore, in questo progetto si è utilizzata la versione 11.0.11.
