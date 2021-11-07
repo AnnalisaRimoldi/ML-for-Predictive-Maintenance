@@ -6,45 +6,32 @@ Tutto il progetto è stato sviluppato con Ubuntu 20.04.
 ## Set-up dell'ambiente di sviluppo
 Prima di installare PySpark bisogna verificare di soddisfare il seguente prerequisito. Spark è scritto in Scala Programming Language e funziona in ambiente Java Virtual Machine (JVM). Ecco perché bisogna verificare di aver installato un Java Development Kit (JDK). E' importante avere una versione 8 o superiore, in questo progetto si è utilizzata la versione 11.0.11.
 
-Inoltre, è necessario aver precedentemente installato Python, in questo progetto si è utilizzato Python v. 3.8.8. Consiglio di installare Python con il package manager Anaconda (qui le istruzioni per installare Anaconda: https://docs.anaconda.com/anaconda/install/linux/).
+Inoltre, è necessario aver precedentemente installato Python, in questo progetto si è utilizzato Python v. 3.8.8. 
+```bash
+sudo apt install -y python3-pip
+```
 ### Installazione PySpark
 E' possibile installare PySpark con l'aiuto di `pip`:
 ```bash
-$ pip3 install pyspark
+pip3 install pyspark
 ```
-In alternativa, puoi anche andare alla pagina di download di Spark (https://spark.apache.org/downloads.html). Mantieni le opzioni predefinite nei primi tre passaggi e troverai un collegamento scaricabile nel passaggio 3. Fai clic su quel collegamento per scaricarlo. In questo progetto è stata utilizzata la versione spark-3.1.2-bin-hadoop3.2.tgz.
-Relese 3.1.2 pre built for Apache Hadoop 3.2 and later
-
-**Nota**: potrebbe impiegarci un po' di tempo.
-
-Assicurati di decomprimere la directory che appare nella cartella `Download`. Si può fare automaticamente, facendo doppio clic sull'archivio `spark-2.2.0-bin-hadoop2.7.tgz` o aprendo il terminale ed eseguendo il seguente comando:
-```bash
-sudo tar xvf spark-3.1.2-bin-hadoop3.2.tgz
-```
-Spostare la cartella decompressa in `/usr/local/spark` eseguendo la seguente riga:
-```bash
-sudo mv spark-3.1.2-bin-hadoop3.2 /usr/local/spark
-```
-**Nota**: che se ricevi un errore che dice che l'autorizzazione è negata per spostare questa cartella nella nuova posizione, bisogna aggiungere `sudo` davanti a questo comando.
-
 ### Installazione Jupyter
 Per installare Jupyter Notebook eseguire il seguente comando sul terminale:
 ```bash
-$ pip install jupyter
+pip3 install jupyterlab
 ```
 ## JupyterLab
 Prima di tutto aprire l'ambiente di sviluppo JupyterLab con il seguente comando:
 ```bash
-$ jupyter-lab
+python3 -m jupyterlab
 ```
-**Nota**: se da un errore del tipo "L'accesso al file è stato negato", copiare e incollare nel browser il secondo link che appare nel terminale dopo l'esecuzione del comando.
 
 A questo punto è possibile scaricare i due file `.ipynb` presenti in questa repo e fare l'upload nel JupyterLab. Prima di poter eseguire i notebook è necessario effettuare il download del dataset (https://archive.ics.uci.edu/ml/machine-learning-databases/00601/) e installare le seguenti librerie.
 
 ## Installazione librerie necessarie
-* **Pandas**: `pip install pandas`
-* **Seaborn**: `pip install seaborn`
-* **Matplotlib**: `pip install matplotlib`
-* **Scikit-learn**: `pip install -U scikit-learn`
-* **Imblearn**: `pip install -U imbalanced-learn`
-* **Handy spark**: `pip install handyspark`
+* **Pandas**: `pip3 install pandas`
+* **Seaborn**: `pip3 install seaborn`
+* **Matplotlib**: `pip3 install matplotlib`
+* **Scikit-learn**: `pip3 install -U scikit-learn`
+* **Imblearn**: `pip3 install -U imbalanced-learn`
+* **Handy spark**: `pip3 install handyspark`
