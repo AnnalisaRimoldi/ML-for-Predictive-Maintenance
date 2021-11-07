@@ -12,17 +12,18 @@ E' possibile installare PySpark con l'aiuto di `pip`:
 ```bash
 $ pip3 install pyspark
 ```
-In alternativa, puoi anche andare alla pagina di download di Spark (https://spark.apache.org/downloads.html). Mantieni le opzioni predefinite nei primi tre passaggi e troverai un collegamento scaricabile nel passaggio 4. Fai clic su quel collegamento per scaricarlo. Per questo tutorial, scaricherai la versione Spark 2.2.0 e il tipo di pacchetto "Precompilato per Apache Hadoop 2.7 e versioni successive".
+In alternativa, puoi anche andare alla pagina di download di Spark (https://spark.apache.org/downloads.html). Mantieni le opzioni predefinite nei primi tre passaggi e troverai un collegamento scaricabile nel passaggio 3. Fai clic su quel collegamento per scaricarlo. In questo progetto è stata utilizzata la versione spark-3.1.2-bin-hadoop3.2.tgz.
+Relese 3.1.2 pre built for Apache Hadoop 3.2 and later
 
 **Nota**: potrebbe impiegarci un po' di tempo.
 
 Assicurati di decomprimere la directory che appare nella cartella `Download`. Si può fare automaticamente, facendo doppio clic sull'archivio `spark-2.2.0-bin-hadoop2.7.tgz` o aprendo il terminale ed eseguendo il seguente comando:
 ```bash
-$ tar xvf spark-2.2.0-bin-hadoop2.7.tgz
+sudo tar xvf spark-3.1.2-bin-hadoop3.2.tgz
 ```
 Spostare la cartella decompressa in `/usr/local/spark` eseguendo la seguente riga:
 ```bash
-$ mv spark-2.1.0-bin-hadoop2.7 /usr/local/spark
+sudo mv spark-3.1.2-bin-hadoop3.2 /usr/local/spark
 ```
 **Nota**: che se ricevi un errore che dice che l'autorizzazione è negata per spostare questa cartella nella nuova posizione, bisogna aggiungere `sudo` davanti a questo comando.
 
